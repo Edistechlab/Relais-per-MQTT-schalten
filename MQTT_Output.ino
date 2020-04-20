@@ -1,3 +1,14 @@
+/*
+Project:  Output send over MQTT with ESP8266 / NodeMCU
+Author:   Thomas Edlinger for www.edistechlab.com
+Date:     Created 19.04.2020 
+Version:  V1.0
+ 
+Required libraries (Tools -> manage libraries)
+ - PubSubClient by Nick O'Leary V2.7.0  
+Required Board (Tools -> Board -> Boards Manager...)
+ - Board: esp8266 by ESP8266 Community V2.6.3
+
 Wirering for the Output:
 Relay      NodeMCU
 VCC         3.3V
