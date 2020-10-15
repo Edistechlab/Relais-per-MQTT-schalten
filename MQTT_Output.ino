@@ -84,13 +84,13 @@ const int OutputPin = 14;  // der Output Pin wo das Relais angehängt ist
 
   if (String(topic) == "esp01/output") {
     Serial.print("Changing output to ");
-    if(messageTemp == "on"){
+    if(messageTemp == "true"){
       Serial.println("on");
       digitalWrite(OutputPin, LOW);   //Invertiertes Signal
       client.publish(relay_topic, "ON");
       delay(200);
     }
-    else if(messageTemp == "off"){
+    else if(messageTemp == "false"){
       Serial.println("off");
       digitalWrite(OutputPin, HIGH);  
       client.publish(relay_topic, "OFF");
