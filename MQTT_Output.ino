@@ -2,7 +2,9 @@
 Project:  Output send over MQTT with ESP8266 / NodeMCU
 Author:   Thomas Edlinger for www.edistechlab.com
 Date:     Created 19.04.2020 
-Version:  V1.0
+Version:  V1.1
+Fehlerkorrektur: Im Video ist bei Node-red der Ouput auf on / off gesetzt und nicht wie 
+davor im Code true / false - Danke für den Hinweis Robert Janke
  
 Required libraries (Tools -> manage libraries)
  - PubSubClient by Nick O'Leary V2.7.0  
