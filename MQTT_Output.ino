@@ -84,7 +84,7 @@ const int OutputPin = 14;  // der Output Pin wo das Relais angehängt ist
   }
   Serial.println();
 
-  if (String(topic) == "esp01/output") {
+  if (String(topic) == inTopic) {
     Serial.print("Changing output to ");
     if(messageTemp == "on"){          // geändert von true zu on wie im Video gezeigt
       Serial.println("on");
