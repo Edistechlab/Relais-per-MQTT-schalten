@@ -92,7 +92,7 @@ const int OutputPin = 14;  // der Output Pin wo das Relais angehängt ist
       client.publish(relay_topic, "ON");
       delay(200);
     }
-    else if(messageTemp == "off"){.    // geändert von false zu off wie im Video gezeigt
+    else if(messageTemp == "off"){    // geändert von false zu off wie im Video gezeigt
       Serial.println("off");
       digitalWrite(OutputPin, HIGH);  
       client.publish(relay_topic, "OFF");
